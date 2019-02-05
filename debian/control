@@ -1,0 +1,61 @@
+Source: purestorage
+Maintainer: Pure Storage <wes@purestorage.com>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python3-setuptools, python-all (>= 2.6.6-3), python3-all, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+Package: python-purestorage
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Pure Storage FlashArray REST Client
+ Pure Storage REST Client
+ ========================
+ This library is designed to provide a simple interface for issuing commands to
+ a Pure Storage Flash Array using a REST API. It communicates with the array
+ using the python requests HTTP library.
+ .
+ .
+ Requirements
+ ============
+ This library requires the use of python 2.6 or later and the third-party
+ library "requests".
+ .
+ Additionally, this library can only be used communicate with Flash Arrays that
+ support one or more REST API versions between 1.0 and 1.16; currently, this
+ includes any Flash Array running Purity 3.4.0 or later.
+ .
+ .
+ Capabilities
+ ============
+ This library supports all functionality offered by REST API versions up to 1.16.
+
+
+
+Package: python3-purestorage
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Pure Storage FlashArray REST Client
+ Pure Storage REST Client
+ ========================
+ This library is designed to provide a simple interface for issuing commands to
+ a Pure Storage Flash Array using a REST API. It communicates with the array
+ using the python requests HTTP library.
+ .
+ .
+ Requirements
+ ============
+ This library requires the use of python 2.6 or later and the third-party
+ library "requests".
+ .
+ Additionally, this library can only be used communicate with Flash Arrays that
+ support one or more REST API versions between 1.0 and 1.16; currently, this
+ includes any Flash Array running Purity 3.4.0 or later.
+ .
+ .
+ Capabilities
+ ============
+ This library supports all functionality offered by REST API versions up to 1.16.
+
